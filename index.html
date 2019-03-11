@@ -5,6 +5,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
 	<title>Google</title>
 </head>
 
@@ -13,6 +15,7 @@
 	<nav>
 		<a href="#">Gmail</a>
 		<a href="#">Grafika</a>
+		<i class="fas fa-th"></i>
 		<a id="log_in" href="#">Zaloguj się</a>
 	</nav>
 
@@ -21,15 +24,22 @@
 		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
     </div>
     
-    <div class="form">  
-		<form>
+    <div class="form">
+		<div class="form_flex">
+			<i class="fas fa-search"></i>
 			<input type="text" id="search_form">
-		</form>
+			<i class="fas fa-keyboard"></i>
+			<i class="fas fa-microphone"></i>
+		</div>
     </div> 
 
 	<div class="buttons">  
-		<input type="submit" value="Szukaj w Google" id="search">
-		<input type="submit" value="Szczęśliwy traf" id="luck">
+		<button class="mdc-button">
+			<span class="mdc-button__label">Szukaj w Google</span>
+		</button>
+		<button class="mdc-button">
+			<span class="mdc-button__label">Szczęśliwy traf</span>
+		</button>
     </div>
 </section>
 

@@ -25,7 +25,7 @@ nav{
 }
 
 nav a{
-	color: black;
+	color: rgba(0,0,0,0.87);
 	font-size:13px;
 	text-decoration:none;
 	padding-right:15px;
@@ -34,6 +34,15 @@ nav a{
 
 nav a:hover {
 	text-decoration: underline;
+	color:#424242;
+}
+
+.fa-th{
+	color:#5F6368;
+	padding-right:15px;
+}
+
+.fa-th:hover{
 	color:#424242;
 }
 
@@ -61,25 +70,64 @@ section{
 	padding-bottom: 15px;
 }
 
-.form {
-  text-align: center;
+.form{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
 }
 
-#search_form { 
-	width: 480px;
-	line-height: 35px;
-	font-size:16px;
-	padding:5px 20px;
+.form_flex {
+	text-align: center;
+	display:flex;
 	border-radius:25px;
 	border:1px solid #DFE1E5;
+	width: 480px;
+	padding:5px 20px;
 }
 
-#search_form:hover{
+
+#search_form { 
+	display:flex;
+	border:0;
+	line-height: 35px;
+	font-size:16px;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.form_flex:hover{
 	box-shadow: 0 0 5px rgba(33,33,33,.2);
 }
 
-#search_form:focus{
+.form_flex:focus{
 	box-shadow: 0 0 5px rgba(33,33,33,.2);
+	outline:0;
+}
+
+#search_form{
+	display:flex;
+	flex:1;
+}
+
+.fa-search{
+	color:#4285F4;
+	display:flex;
+	align-self:center;
+}
+
+.fa-keyboard{
+	color:#7B7B7B;
+	display:flex;
+	align-self:center;
+	padding-right:15px;
+}
+
+.fa-microphone{
+	color:#4285F4;
+	display:flex;
+	align-self:center;
 }
 
 .buttons {
