@@ -87,14 +87,15 @@ section{
 	padding:5px 20px;
 }
 
-
-#search_form { 
+#search_form{ 
 	display:flex;
 	border:0;
 	line-height: 35px;
 	font-size:16px;
 	padding-left:15px;
 	padding-right:15px;
+	flex:1;
+	outline:0;
 }
 
 .form_flex:hover{
@@ -103,12 +104,6 @@ section{
 
 .form_flex:focus{
 	box-shadow: 0 0 5px rgba(33,33,33,.2);
-	outline:0;
-}
-
-#search_form{
-	display:flex;
-	flex:1;
 }
 
 .fa-search{
@@ -135,45 +130,13 @@ section{
 	padding-top: 30px;
 }
 
-#search{
-	background-color: #F3F3F3; 
-	margin-right: 25px;
-	padding: 0 16px;
-	border-radius: 2px; 
+.mdc-button__label{
 	color: #6F6F6F;
-	font-size:14px;
-	border:0;
-	line-height:35px;
-	margin: 11px 4px;
-	border:1px solid #F3F3F3;
-	cursor:pointer;
+	font-size:20px;
 	font-family:arial, sans-serif;
-}
-
-#search:hover{
-	border:0.5px solid #AAABB6;
-	color:#212121;
-}
-
-#luck{
-	background-color: #F3F3F3; 
-	margin-right: 25px;
-	padding: 0px 16px;
-	border-radius: 2px; 
-	color: #6F6F6F;
 	font-size:14px;
-	border:0;
-	line-height:35px;
-	margin: 11px 4px;
-	border:1px solid #F3F3F3;
-	cursor:pointer;
-	font-family:arial, sans-serif;
-}
-
-#luck:hover{
-	border:0.5px solid #AAABB6;
-	color:#212121;
-	padding: 0px 16px;
+	text-transform: capitalize;
+	letter-spacing:0;
 }
 
 .country{
