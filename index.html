@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+	<script src="https://unpkg.com/vue"></script>
+	<script type="text/javascript" src="animals.js"></script>
+	<script type="text/javascript" src="words.js"></script>
 	<title>Google</title>
 </head>
 
@@ -23,15 +26,19 @@
 	<div class="google-img">
 		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
     </div>
-    
+  
     <div class="form">
 		<div class="form_flex">
 			<i class="fas fa-search"></i>
-			<input type="text" id="search_form">
+			<div id="app99">
+				<v-autocompleter :items="items"></v-autocompleter>
+			</div>
+				<script src="autocompleter.js"></script>
 			<i class="fas fa-keyboard"></i>
 			<i class="fas fa-microphone"></i>
 		</div>
     </div> 
+
 
 	<div class="buttons">  
 		<button class="mdc-button">

@@ -98,6 +98,45 @@ section{
 	outline:0;
 }
 
+.search_form{ 
+	display:flex;
+	border:0;
+	line-height: 35px;
+	font-size:16px;
+	padding-left:15px;
+	padding-right:15px;
+	flex:1;
+	outline:0;
+}
+
+#app99 {
+  color: #2c3e50;
+}
+
+.autocomplete{
+}
+
+.autocomplete-results {
+	border-top:1px solid black;
+	min-height:20px;
+	max-height:140px;
+	overflow:hidden;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.autocomplete-result {
+  list-style: none;
+  text-align: left;
+  padding: 4px 2px;
+  cursor: pointer;
+}
+
+.autocomplete-result.is-active,
+.autocomplete-result:hover {
+  color: black;
+}
+
 .form_flex:hover{
 	box-shadow: 0 0 5px rgba(33,33,33,.2);
 }
