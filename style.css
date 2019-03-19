@@ -94,35 +94,38 @@ section{
 	font-size:16px;
 	padding-left:15px;
 	padding-right:15px;
-	flex:1;
+	flex:6;
 	outline:0;
 }
 
-.search_form{ 
-	display:flex;
-	border:0;
-	line-height: 35px;
-	font-size:16px;
-	padding-left:15px;
-	padding-right:15px;
-	flex:1;
-	outline:0;
-}
-
-#app99 {
+#vueApp {
   color: #2c3e50;
+  display:flex;
+  flex:6;
 }
 
-.autocomplete{
+#completer{
+	display:flex;
+	flex:6;
+}
+
+#ac{
+	display:flex;
+	flex:6;
+	flex-direction:column;
 }
 
 .autocomplete-results {
-	border-top:1px solid black;
+	border-top:1px solid #DFE1E5;
 	min-height:20px;
-	max-height:140px;
 	overflow:hidden;
 	padding-left:15px;
 	padding-right:15px;
+
+}
+
+.autocomplete-results ul{
+	padding:0;
 }
 
 .autocomplete-result {
@@ -145,23 +148,30 @@ section{
 	box-shadow: 0 0 5px rgba(33,33,33,.2);
 }
 
+.fas{
+	padding-top:10px;
+}
+
 .fa-search{
 	color:#4285F4;
 	display:flex;
-	align-self:center;
+	align-self:baseline;
+	flex:0.5;
 }
 
 .fa-keyboard{
 	color:#7B7B7B;
 	display:flex;
-	align-self:center;
-	padding-right:15px;
+	align-self:baseline;
+	flex:0.5;
 }
 
 .fa-microphone{
 	color:#4285F4;
 	display:flex;
-	align-self:center;
+	align-self:baseline;
+	flex:0.5;
+	position:relative;
 }
 
 .buttons {
