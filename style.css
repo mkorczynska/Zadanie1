@@ -10,9 +10,9 @@ body{
 	display:grid;
 	height:100vh;
 	grid-template-columns: auto auto auto;
-	grid-template-rows: 40px auto 40px 40px;
+	grid-template-rows: 60px auto 40px 40px;
 	grid-template-areas: 
-    ". . navigate"
+    "navigate navigate navigate"
     "main main main"
 	"country country country"
     "footer footer footer";
@@ -20,11 +20,24 @@ body{
 
 nav{
 	grid-area:navigate;
-	justify-self:end;
-	align-self:end;
+	justify-content:space-between;
+	display:inline-grid;
 }
 
-nav a{
+.links{
+	grid-area:navigate;
+	justify-self:end;
+	align-self:center;
+	color: rgba(0,0,0,0.87);
+	font-size:13px;
+	text-decoration:none;
+	padding-right:15px;
+	line-height:24px;
+	grid-column-start:3;
+	padding-top:20px;
+}
+
+.links a{
 	color: rgba(0,0,0,0.87);
 	font-size:13px;
 	text-decoration:none;
@@ -32,7 +45,7 @@ nav a{
 	line-height:24px;
 }
 
-nav a:hover {
+.links a:hover {
 	text-decoration: underline;
 	color:#424242;
 }
@@ -70,16 +83,34 @@ section{
 	padding-bottom: 15px;
 }
 
+
+.img-small{
+	padding-right:15px;
+	width:90px; 
+	height:30px;
+}
+
+
 .form{
 	display:flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: space-around;
+	padding-top:20px;
+}
+
+.form-top{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding-top:20px;
+	padding-left:15px;
 }
 
 .form_flex {
-	text-align: center;
+	text-align:center;
 	display:flex;
 	border-radius:25px;
 	border:1px solid #DFE1E5;
@@ -186,6 +217,28 @@ section{
 	font-size:14px;
 	text-transform: capitalize;
 	letter-spacing:0;
+}
+
+.results{
+	padding-top:50px;
+	padding-left:80px;
+}
+
+.results ul{
+	list-style:none;
+}
+
+.results h3{
+	color: #1a0dab;
+}
+
+.results h3:hover{
+	text-decoration:underline;
+}
+
+.results p{
+	color:#545454;
+	line-height:1.54;
 }
 
 .country{

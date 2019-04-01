@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+	<script src="https://unpkg.com/vue"></script>
+	<script type="text/javascript" src="animals.js"></script>
+	<script type="text/javascript" src="words.js"></script>
+	<title>Wyniki</title>
+</head>
+
+<body>
+<div class="grid-container">
+		<span>
+		<div class="form-top">
+			<img class="img-small" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"/>
+			<div class="form_flex">
+				<div id="vueApp">
+					<v-autocompleter :items="items"></v-autocompleter>
+				</div>
+				<script src="autocompleter.js"></script>
+				<i class="fas fa-keyboard"></i>
+				<i class="fas fa-microphone"></i>
+				<i class="fas fa-search"></i>
+			</div>
+		</div><!--form-top end-->
+		</span>
+		<div class="links">
+			<i class="fas fa-th"></i>
+			<a id="log_in" href="#">Zaloguj się</a>
+		</div>
+<section>
+
+<div class="results">
+<ul>
+	<li>
+	<h3>Lorem ipsum dolor sit amet</h3>
+	<p>consectetur adipiscing elit</p></li>
+	<li>
+	<h3>Lorem ipsum dolor sit amet</h3>
+	<p>consectetur adipiscing elit</p></li>
+	<li>
+	<h3>Lorem ipsum dolor sit amet</h3>
+	<p>consectetur adipiscing elit</p></li>
+	<li>
+	<h3>Lorem ipsum dolor sit amet</h3>
+	<p>consectetur adipiscing elit</p></li>
+	<li>
+	<h3>Lorem ipsum dolor sit amet</h3>
+	<p>consectetur adipiscing elit</p></li>
+	<li>
+	<h3>Lorem ipsum dolor sit amet</h3>
+	<p>consectetur adipiscing elit</p></li>
+	<li>
+	<h3>Lorem ipsum dolor sit amet</h3>
+	<p>consectetur adipiscing elit</p></li>
+	<li>
+	<h3>Lorem ipsum dolor sit amet</h3>
+	<p>consectetur adipiscing elit</p></li>
+	<li>
+	<h3>Lorem ipsum dolor sit amet</h3>
+	<p>consectetur adipiscing elit</p></li>
+	<li>
+	<h3>Lorem ipsum dolor sit amet</h3>
+	<p>consectetur adipiscing elit</p></li>
+
+</div>
+
+</section>
+
+<div class="country">
+	<p>Polska</p>
+</div>
+
+<footer>
+	<span class="left">
+		<a href="#">Reklamuj się</a></li>
+		<a href="#">Dla firm</a></li>
+		<a href="#">O nas</a></li> 
+	</span>
+	<span class="right">
+		<a href="#">Prywatność</a></li>
+		<a href="#">Warunki</a></li>
+		<a href="#">Ustawienia</a></li>
+	</span>
+</footer>
+</div>
+</body>
+</html>
