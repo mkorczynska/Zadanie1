@@ -88,6 +88,9 @@ section{
 	padding-right:15px;
 	width:90px; 
 	height:30px;
+	padding-top:10px;
+	align-self:baseline;
+	display:flex;
 }
 
 
@@ -116,6 +119,8 @@ section{
 	border:1px solid #DFE1E5;
 	width: 480px;
 	padding:5px 20px;
+		position:relative;
+	z-index:100;
 }
 
 #search_form{ 
@@ -152,7 +157,6 @@ section{
 	overflow:hidden;
 	padding-left:15px;
 	padding-right:15px;
-
 }
 
 .autocomplete-results ul{
@@ -221,24 +225,45 @@ section{
 
 .results{
 	padding-top:50px;
-	padding-left:80px;
+	padding-left:100px;
+	position:relative;
+	z-index:100;
 }
 
 .results ul{
 	list-style:none;
 }
 
+.results li{
+	padding-bottom:30px;
+}
+
 .results h3{
 	color: #1a0dab;
+	margin:0;
+	font-size: 18px;
+	line-height: 1.33;
 }
 
 .results h3:hover{
 	text-decoration:underline;
 }
 
+.results h4{
+	color: #006621;
+	margin:0;
+	font-size: 14px;
+	padding-top: 1px;
+	line-height: 1.43;
+}
+
 .results p{
 	color:#545454;
 	line-height:1.54;
+	font-size:15px;
+	text-align:left;
+	word-wrap: break-word;
+	margin:0;
 }
 
 .country{
