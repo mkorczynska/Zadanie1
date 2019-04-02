@@ -16,25 +16,36 @@
 <body>
 <div class="grid-container">
 		<span>
-		<div class="form-top">
-			<img class="img-small" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"/>
-			<div class="form_flex">
-				<div id="vueApp">
-					<v-autocompleter :items="items"></v-autocompleter>
+			<div class="form-top">
+				<img class="img-small" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"/>
+				<div class="form_flex">
+					<div id="vueApp">
+						<v-autocompleter :items="items"></v-autocompleter>
+					</div>
+					<script src="autocompleter.js"></script>
+					<i class="fas fa-keyboard"></i>
+					<i class="fas fa-microphone"></i>
+					<i class="fas fa-search"></i>
 				</div>
-				<script src="autocompleter.js"></script>
-				<i class="fas fa-keyboard"></i>
-				<i class="fas fa-microphone"></i>
-				<i class="fas fa-search"></i>
-			</div>
-		</div><!--form-top end-->
+			</div><!--form-top end-->
 		</span>
 		<div class="links">
 			<i class="fas fa-th"></i>
 			<a id="log_in" href="#">Zaloguj się</a>
 		</div>
 <section>
-
+<div class="nav-top">
+<span class="nav-bar">
+	<a href="#">Wszystko</a></li>
+	<a href="#">Grafika</a></li>
+	<a href="#">Mapy</a></li>
+	<a href="#">Filmy</a></li>
+	<a href="#">Wiadomości</a></li> 
+	<a href="#">Więcej</a></li> 
+	<a href="#">Ustawienia</a></li> 
+	<a href="#">Narzędzia</a></li> 
+</span>
+</div>
 <div class="results">
 <ul>
 	<li>
