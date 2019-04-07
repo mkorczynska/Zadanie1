@@ -138,6 +138,8 @@ section{
 	align-items: center;
 	justify-content: space-around;
 	padding-top:20px;
+	position:relative;
+	z-index:100;
 }
 
 .form-top{
@@ -247,8 +249,6 @@ section{
 .buttons {
 	text-align: center;
 	padding-top: 30px;
-	position:relative;
-	z-index:900;
 }
 
 .mdc-button__label{
@@ -290,6 +290,7 @@ section{
 	font-size: 14px;
 	padding-top: 1px;
 	line-height: 1.43;
+	
 }
 
 .results p{

@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 	<script type="text/javascript" src="animals.js"></script>
 	<script type="text/javascript" src="words.js"></script>
 	<title>Wyniki</title>
@@ -34,81 +35,23 @@
 			<a id="log_in" href="#">Zaloguj się</a>
 		</div>
 <section>
+
+<div id="app">
 <div class="nav-top">
-<span class="nav-bar">
-	<a href="#">Wszystko</a></li>
-	<a href="#">Grafika</a></li>
-	<a href="#">Mapy</a></li>
-	<a href="#">Filmy</a></li>
-	<a href="#">Wiadomości</a></li> 
-	<a href="#">Więcej</a></li> 
-	<a href="#">Ustawienia</a></li> 
-	<a href="#">Narzędzia</a></li> 
-</span>
+	<span class="nav-bar">
+    <router-link to="/wszystko">Wszystko</router-link>
+    <router-link to="/grafika">Grafika</router-link>
+	<router-link to="/mapy">Mapy</router-link>
+	<router-link to="/filmy">Filmy</router-link>
+	<router-link to="/wiadomosci">Wiadomości</router-link>
+	<router-link to="/wiecej">Więcej</router-link>
+	<router-link to="/ustawienia">Ustawienia</router-link>	
+	<router-link to="/narzedzia">Narzędzia</router-link>
+	</span>
 </div>
-<div class="results">
-<ul>
-	<li>
-		<h3>Lorem ipsum dolor sit amet</h3>
-		<h4>consectetur adipiscing elit</h4>
-		<p> Sed vehicula eget lectus eu semper. Phasellus porta vel arcu consectetur aliquet.</p>
-	</li>
-
-	<li>
-		<h3>Lorem ipsum dolor sit amet</h3>
-		<h4>consectetur adipiscing elit</h4>
-		<p> Sed vehicula eget lectus eu semper. Phasellus porta vel arcu consectetur aliquet.</p>
-	</li>
-	
-	<li>
-		<h3>Lorem ipsum dolor sit amet</h3>
-		<h4>consectetur adipiscing elit</h4>
-		<p> Sed vehicula eget lectus eu semper. Phasellus porta vel arcu consectetur aliquet.</p>
-	</li>
-	
-	<li>
-		<h3>Lorem ipsum dolor sit amet</h3>
-		<h4>consectetur adipiscing elit</h4>
-		<p> Sed vehicula eget lectus eu semper. Phasellus porta vel arcu consectetur aliquet.</p>
-	</li>
-	
-	<li>
-		<h3>Lorem ipsum dolor sit amet</h3>
-		<h4>consectetur adipiscing elit</h4>
-		<p> Sed vehicula eget lectus eu semper. Phasellus porta vel arcu consectetur aliquet.</p>
-	</li>
-	
-	<li>
-		<h3>Lorem ipsum dolor sit amet</h3>
-		<h4>consectetur adipiscing elit</h4>
-		<p> Sed vehicula eget lectus eu semper. Phasellus porta vel arcu consectetur aliquet.</p>
-	</li>
-	
-	<li>
-		<h3>Lorem ipsum dolor sit amet</h3>
-		<h4>consectetur adipiscing elit</h4>
-		<p> Sed vehicula eget lectus eu semper. Phasellus porta vel arcu consectetur aliquet.</p>
-	</li>
-	
-	<li>
-		<h3>Lorem ipsum dolor sit amet</h3>
-		<h4>consectetur adipiscing elit</h4>
-		<p> Sed vehicula eget lectus eu semper. Phasellus porta vel arcu consectetur aliquet.</p>
-	</li>
-	
-	<li>
-		<h3>Lorem ipsum dolor sit amet</h3>
-		<h4>consectetur adipiscing elit</h4>
-		<p> Sed vehicula eget lectus eu semper. Phasellus porta vel arcu consectetur aliquet.</p>
-	</li>
-	
-	<li>
-		<h3>Lorem ipsum dolor sit amet</h3>
-		<h4>consectetur adipiscing elit</h4>
-		<p> Sed vehicula eget lectus eu semper. Phasellus porta vel arcu consectetur aliquet.</p>
-	</li>
-
+  <router-view></router-view>
 </div>
+<script type="text/javascript" src="router.js"></script>
 
 </section>
 
@@ -129,5 +72,8 @@
 	</span>
 </footer>
 </div>
+
 </body>
+
+
 </html>
