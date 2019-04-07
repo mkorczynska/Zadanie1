@@ -15,11 +15,11 @@
 </head>
 
 <body>
-<div class="grid-container">
+	<div class="grid-container">
 		<span>
 			<div class="form-top">
 				<img class="img-small" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"/>
-				<div class="form_flex">
+				<div class="form-flex">
 					<div id="vueApp">
 						<v-autocompleter :items="items"></v-autocompleter>
 					</div>
@@ -34,46 +34,41 @@
 			<i class="fas fa-th"></i>
 			<a id="log_in" href="#">Zaloguj się</a>
 		</div>
-<section>
+		<section>
+			<div id="app">
+				<div class="nav-top">
+					<span class="nav-bar">
+						<router-link to="/wszystko">Wszystko</router-link>
+						<router-link to="/grafika">Grafika</router-link>
+						<router-link to="/mapy">Mapy</router-link>
+						<router-link to="/filmy">Filmy</router-link>
+						<router-link to="/wiadomosci">Wiadomości</router-link>
+						<router-link to="/wiecej">Więcej</router-link>
+						<router-link to="/ustawienia">Ustawienia</router-link>	
+						<router-link to="/narzedzia">Narzędzia</router-link>
+					</span><!--nav-bar end-->
+				</div><!--nav-top end-->
+				<router-view></router-view>
+			</div><!--app end-->
+			<script type="text/javascript" src="router.js"></script>
+		</section>
 
-<div id="app">
-<div class="nav-top">
-	<span class="nav-bar">
-    <router-link to="/wszystko">Wszystko</router-link>
-    <router-link to="/grafika">Grafika</router-link>
-	<router-link to="/mapy">Mapy</router-link>
-	<router-link to="/filmy">Filmy</router-link>
-	<router-link to="/wiadomosci">Wiadomości</router-link>
-	<router-link to="/wiecej">Więcej</router-link>
-	<router-link to="/ustawienia">Ustawienia</router-link>	
-	<router-link to="/narzedzia">Narzędzia</router-link>
-	</span>
-</div>
-  <router-view></router-view>
-</div>
-<script type="text/javascript" src="router.js"></script>
+		<div class="country">
+			<p>Polska</p>
+		</div>
 
-</section>
-
-<div class="country">
-	<p>Polska</p>
-</div>
-
-<footer>
-	<span class="left">
-		<a href="#">Reklamuj się</a></li>
-		<a href="#">Dla firm</a></li>
-		<a href="#">O nas</a></li> 
-	</span>
-	<span class="right">
-		<a href="#">Prywatność</a></li>
-		<a href="#">Warunki</a></li>
-		<a href="#">Ustawienia</a></li>
-	</span>
-</footer>
-</div>
-
+		<footer>
+			<span class="left">
+				<a href="#">Reklamuj się</a></li>
+				<a href="#">Dla firm</a></li>
+				<a href="#">O nas</a></li> 
+			</span>
+			<span class="right">
+				<a href="#">Prywatność</a></li>
+				<a href="#">Warunki</a></li>
+				<a href="#">Ustawienia</a></li>
+			</span>
+		</footer>
+	</div><!--grid-container end-->
 </body>
-
-
 </html>

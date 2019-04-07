@@ -15,60 +15,59 @@
 </head>
 
 <body>
-<div class="grid-container">
-	<nav>
-		<div class="links">
-			<a href="#">Gmail</a>
-			<a href="#">Grafika</a>
-			<i class="fas fa-th"></i>
-			<a id="log_in" href="#">Zaloguj się</a>
-		</div>
-	</nav>
-
-<section>
-	<div class="google-img">
-		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
-    </div>
-  
-    <div class="form">
-		<div class="form_flex">
-			<i class="fas fa-search"></i>
-			<div id="vueApp">
-				<v-autocompleter :items="items"></v-autocompleter>
+	<div class="grid-container">
+		<nav>
+			<div class="links">
+				<a href="#">Gmail</a>
+				<a href="#">Grafika</a>
+				<i class="fas fa-th"></i>
+				<a id="log_in" href="#">Zaloguj się</a>
 			</div>
+		</nav>
+
+		<section>
+			<div class="google-img">
+				<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
+			</div>
+  
+		<div class="form">
+			<div class="form-flex">
+				<i class="fas fa-search"></i>
+				<div id="vueApp">
+					<v-autocompleter :items="items"></v-autocompleter>
+				</div>
 				<script src="autocompleter.js"></script>
-			<i class="fas fa-keyboard"></i>
-			<i class="fas fa-microphone"></i>
+				<i class="fas fa-keyboard"></i>
+				<i class="fas fa-microphone"></i>
+			</div><!--form_flex end-->
+		</div><!--form end-->
+
+		<div class="buttons">  
+			<button class="pure-material-button-contained">
+				<span onclick="location.href = 'wyniki.html#/wszystko';">Szukaj w Google</span>
+			</button>
+			<button class="pure-material-button-contained">
+				<span>Szczęśliwy traf</span>
+			</button>
+		</div><!--buttons end-->
+		</section>
+
+		<div class="country">
+			<p>Polska</p>
 		</div>
-    </div> 
 
-
-	<div class="buttons">  
-		<button class="mdc-button">
-			<span class="mdc-button__label" onclick="location.href = 'wyniki.html#/wszystko';">Szukaj w Google</span>
-		</button>
-		<button class="mdc-button">
-			<span class="mdc-button__label">Szczęśliwy traf</span>
-		</button>
-    </div>
-</section>
-
-<div class="country">
-	<p>Polska</p>
-</div>
-
-<footer>
-	<span class="left">
-		<a href="#">Reklamuj się</a></li>
-		<a href="#">Dla firm</a></li>
-		<a href="#">O nas</a></li> 
-	</span>
-	<span class="right">
-		<a href="#">Prywatność</a></li>
-		<a href="#">Warunki</a></li>
-		<a href="#">Ustawienia</a></li>
-	</span>
-</footer>
-</div>
+		<footer>
+			<span class="left">
+				<a href="#">Reklamuj się</a></li>
+				<a href="#">Dla firm</a></li>
+				<a href="#">O nas</a></li> 
+			</span>
+			<span class="right">
+				<a href="#">Prywatność</a></li>
+				<a href="#">Warunki</a></li>
+				<a href="#">Ustawienia</a></li>
+			</span>
+		</footer>
+	</div><!--grid-container end-->
 </body>
 </html>
